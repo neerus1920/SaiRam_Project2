@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<style>
+#head {
+    background-color:#99C2FF;
+    color:green;
+    text-align:center;
+    padding:7px;
+	font-size:200%;
+	
+}
+#foot {
+    background-color:#99C2FF;
+    color:green;
+    clear:both;
+    text-align:center;
+   padding:7px;	 	 
+}
+
+#sect {
+    clear:both;
+    background-color:#99FF99;
+    padding:5px;
+    margin: 10px;
+	height: 1000px;
+}
+p  {
+    color:black;
+    font-family:courier;
+    font-size:100%;
+}
+ul#menu li {display:inline;}
+ul#menu li a:hover {background-color: orange;}
+
+ul#menu li a {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px 4px 10px 10px;
+}
+
+
+</style>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<title>My assignment page </title>
+</head>
+<body>
+
+<div id="head">
+<h1>Welcome to Sai blog</h1>
+</div>
+
+<div id="sect">
+<ul id="menu">
+    <li><a href = "http://www.google.com">GOOGLE</a></li>
+    <li><a href = "http://www.facebook.com">FB</a></li>
+    <li><a href = "http://www.cricinfo.com">CRICINFO</a></li>
+    <li><a href = "http://www.yahoo.com">YAHOO!</a></li>
+  </ul>
+<p>Signup here to view my blog</p>
+<form name="myForm"action="index.html" method="GET">
+Name:<br>
+<input id="i1" type="text" name="name" placeholder="Enter Your First Name" required>&nbsp;&nbsp;<input id="i2"type="text" name="name" placeholder="Enter Your Last Name" required>
+</br></br>
+Username:<br>
+<input type="text" name="username" placeholder="Enter Your Username" required></br></br>
+<input type="radio" name="Gender" value="male" checked>Male
+<input type="radio" name="Gender" value="female">Female</br></br>
+<button type="button" id="b1" onclick="fullName()">Full Name</button></br>
+<p id="p1"></p></br>
+<input type="submit" value="Submit">
+<div class="container">
+  <h2>Hi all</h2>
+   <img src="saii.jpg" class="img-circle" alt="Sai image" width="304" height="236"> 
+  <div style="text-align: center; margin: auto"><object type="application/x-shockwave-flash" style="width:300px; height:300px;" data="http://www.youtube.com/v/8t8jo4cMGIU?color2=FBE9EC&amp;rel=0&amp;version=3">
+        <param name="movie" value="http://www.youtube.com/v/8t8jo4cMGIU?color2=FBE9EC&amp;rel=0&amp;version=3" />
+        <param name="allowFullScreen" value="true" />
+        <param name="allowscriptaccess" value="always" />
+        </object><div style="font-size: 0.8em"></div></div>
+</div>
+</form>
+</br></br>
+
+<a href="https://www.google.com/"><center>www.google.com</center></a></br></br></br>
+</div>
+
+<div id="foot">
+Copyright © Sai
+</div>
+<script>
+function fullName(){
+var x = document.getElementById("i1").value;
+var y = document.getElementById("i2").value;
+z = "Your Full Name Is: "+x+" "+y;
+document.getElementById("p1").innerHTML = z;
+}
+</script>
+</body>
+</html>
